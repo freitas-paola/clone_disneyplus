@@ -10,8 +10,9 @@
     justify-content: space-around;
     margin-top: 50px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       display: block;
+      margin-top: 24px;
     }
 
     &__item {
@@ -19,6 +20,12 @@
       padding: 60px 44px 44px;
       max-width: 380px;
       width: 100%;
+
+      @media (max-width: 1024px) {
+        max-width: 440px;
+        padding: 30px 44px 30px;
+        margin: 0 auto;
+      }
 
       .button {
         margin-top: 2vw;
@@ -29,6 +36,10 @@
         background-image: url(../images/fundo_combo_plus.png);
         background-repeat: no-repeat;
         background-size: contain;
+
+        @media (max-width: 1024px) {
+          background-position: center;
+        }
       }
 
       img {

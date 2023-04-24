@@ -7,12 +7,16 @@
   text-align: center;
   background-size: cover;
 
-  @media (max-width: 768px) {
-    background-image: url(../images/hero_celular.jpeg);
+  @media (max-width: 1024px) {
+    background-image: url(../images/hero_tablet.jpg);
     padding-top: calc(50vw + 25px);
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: -55px;
+  }
+
+  @media (max-width: 768px) {
+    background-image: url(../images/hero_celular.jpeg);
   }
 
   .button {
@@ -22,6 +26,10 @@
 
   &__content {
     max-width: 640px;
+
+    @media (max-width: 1024px) {
+      max-width: 900px;
+    }
 
     &__branding {
       max-width: 320px;
